@@ -1,0 +1,45 @@
+Aucun dump ne sera fourni, car il est important de savoir installer soit même un Linux et de le configurer.
+
+Cependant, il est conseillé d'installer un Arch Linux en physique ou sur une VM en suivant le Wiki d'Arch.
+Renseignez vous bien sur Arch et sur sa philosophie.
+Pensez bien à installer l'ensemble des paquets de base et de base-devel.
+Préférez syslinux à grub.
+
+Une fois l'installation faite, connectez vous en tant que root avec le mdp que vous avez choisi lors de l'installation.
+
+La commande man vous permet d'avoir des informations sur des commandes, de lire le manuel :
+man <commande>
+
+Pensez à ajouter un utilisateur (man useradd).
+Il peut être intéressant d'être dans les mêmes groupes que vos camarades (si besoin, créez des groupes)
+
+Une fois l'utilisateur créé, il peut être intéressant de donner les droits d'admin à ce dernier.
+Pour cela, téléchargé le paquet sudo, puis configurer le fichier via la commande visudo (attention, vous serez sous l'éditeur vi).
+
+yaourt vous permettra d'accéder aux paquets de l'AUR. Il est recommandé d'inclure archlinuxfr dans vos recherches google pour comprendre comment configurer.
+
+Vous pouvez maintenant redémarer et vous connecter en tant qu'utilisateur.
+Pour avoir les droits d'admin lorsque vous tapez une commande, précédez là de "sudo".
+
+La commande sudo su vous permet de vous connecter, avec votre mdp, en tant que root.
+La commande su vous permet de vous connecter, avec le mdp root, en tant que root.
+Evitez de travailler en tant que root.
+
+Vous pouvez installer une interface graphique (préférez i3-wm, awsome ou qtile, voir openbox à xfce, kde et gnome).
+
+Pour i3-wm, téléchargez également rxvt-unicode.
+Pensez également à avoir un gestionnaire de session. Téléchargez en un (slim par exemple) et n'oubliez pas de le lancer au démarage (cf wiki arch, slim).
+
+Il est conseillé de travaillé sous zsh et avec emacs.
+Téléchargez donc les paquets suivants : emacs-nox zsh
+Pour ceux qui ne veulent pas perdre de temps à configurer leur zsh à la main, le paquet grml-zsh-config est plutôt cool.
+Pour ceux qui utiliseront emacs, un fichier de config vous est donné pour générer le header (cf norme.txt).
+Un navigateur internet vous sera également utile pour télécharger les éléments du projet.
+
+Déplacez le fichier de conf header.el dans /usr/share/emacs/site-lisp/
+(Un problème de droit ? Pensez au mot magique).
+
+Les gestionnaires de projet sont intéressant à utiliser.
+N'oubliez pas d'installer les gestionnaires de version qui vont avec (git, svn, mercurial etc...)
+
+Votre système est prêt ? Vous pouvez commencer à coder !
