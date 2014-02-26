@@ -22,8 +22,8 @@ int main()
   int Y;
       for (X=0; X<10; X = X + 1){
 	for (Y=0; Y<10; Y = Y + 1) 
-	    printf("%2d", A[X][Y]);
-  	    printf("\n");         
+	    my_printf("%2d", A[X][Y]);
+  	    my_putstr("\n");         
 	}
       return (0);
     }
